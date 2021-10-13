@@ -252,10 +252,11 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
-let count=0
+
 function howManyTimesElementRepeated(wordsCount,searchElement)
 {
-//  Return Null if Array is Empty
+  let count = 0
+  //  Return Null if Array is Empty
 if(wordsCount.length==0)
 {
   return 0
@@ -263,18 +264,18 @@ if(wordsCount.length==0)
 else
 {
 // Search the element in Array
-  for(i=0;i<wordsCount.length;i++)
+  for(let i=0; i<wordsCount.length; i++)
   {
-    if(wordsCount[i]==searchElement)
+    if(wordsCount[i] == searchElement)
     {
-    count=count+1  
+    count += 1  
     }
   } 
-    if(count==1)
+    if(count == 1)
     {
     return 1
     }
-    else if(count==0)
+    else if(count == 0)
     {
     return 0
     }
